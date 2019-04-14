@@ -5,6 +5,8 @@ Open API (swagger) can be used here for better Doc and validation.
 ## How to use
 - npm i
 
+- gulp
+
 - npm start
 
 ## Available APIs.
