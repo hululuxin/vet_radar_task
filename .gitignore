@@ -1,0 +1,32 @@
+node_modules
+package-lock.json
+
+*.zip
+*.csv
+*.txt
+/*.log
+
+# Transpiled java script files.
+/src/**/*.js
+/src/**/*.td.ts
+/src/**/*.js.map
+# /test/**/*.js
+/test/**/*.td.ts
+/test/**/*.js.map
+
+# Intellij
+*.iml
+*.ipr
+*.iws
+.idea
+
+# Test and coverage outputs.
+.nyc_output
+.sonar
+coverage
+
+dist
+
+test-reports
+exclude
+parameters
