@@ -3,6 +3,8 @@ This repo is for designing and writing a headless catalog and shopping cart API.
 Open API (swagger) can be used here for better Doc and validation.
 
 ## How to use
+- docker-compose up
+
 - npm i
 
 - gulp

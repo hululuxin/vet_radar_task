@@ -1,10 +1,7 @@
-process.env.PORT = "3001";
-
 import * as express from "express";
 import { ShoppingApp } from "./shopping";
 import * as bluebird from "bluebird";
 
-const RedisServer = require("redis-server");
 const Redis = require("redis");
 
 /**
@@ -13,14 +10,6 @@ const Redis = require("redis");
 export class Main {
     public async start() {
         console.log("Starting the catalog and shopping cart API");
-
-        // Start a redis server to cache the cart states.
-        const redisServer = new RedisServer(6379);
-        redisServer.open((err: any) => {
-            if (err) {
-                console.log("Redis server error: " + err);
-            }
-        });
 
         const redisOptions: any = {
             host: "localhost",
